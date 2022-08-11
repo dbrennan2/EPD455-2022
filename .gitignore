@@ -6,6 +6,7 @@ __pycache__/
 # junk.py & bad.py contain code to be ignored; sandboxes
 junk.py
 bad.py
+dummy.py
 
 # C extensions
 *.so
