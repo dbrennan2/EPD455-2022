@@ -3,8 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# junk.py contains code to be ignored; it's a sandbox
+# junk.py & bad.py contain code to be ignored; sandboxes
 junk.py
+bad.py
 
 # C extensions
 *.so
