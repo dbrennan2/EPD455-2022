@@ -12,5 +12,5 @@ def sum(a,b,c):
 
 # execute code above 100000 times
 howManyTimes = 100000
-execution_time = timeit.repeat(stmt=code, setup=impMath, number=howManyTimes)
+execution_time = timeit.repeat(stmt=code, setup=impMath, repeat = 5, number=howManyTimes)
 print("Execution time:", execution_time, "seconds (for", howManyTimes, "runs)")
