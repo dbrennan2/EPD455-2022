@@ -1,20 +1,30 @@
 import time
-from reader import feed
 
 def approach1():
     """code works, not pythonic"""
-    tic = time.perf_counter()
-    #code here
-    toc = time.perf_counter()
-    print(f"Downloaded the tutorial in {toc - tic:0.7f} seconds")
+    sum = 0
+    # start time
+    tic = time.time()
+    # piece of code
+    for i in range(100000):
+        sum+=i
+    # end time
+    toc = time.time()
+    print(f"For loop took {toc - tic:0.7f} seconds")
 
 def approach2():
     """code works, and pythonic"""
+    sum = 0
+    # start time
     tic = time.perf_counter()
-    #code here
+    # piece of code
+    for i in range(100000):
+        sum+=i
+    # end time
     toc = time.perf_counter()
-    print(f"Downloaded the tutorial in {toc - tic:0.7f} seconds")
+    print(f"For loop took {toc - tic:0.7f} seconds with perf_counter")
 
 
 if __name__ == "__main__":
-    main()
+    # approach1()
+    approach2()   
