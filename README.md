@@ -1,2 +1,2 @@
-# EPD455
-public repo, related to EPD455 Python intro class
+# EPD455-2022
+public repo, related to the 2022 EPD455 Python intro class
