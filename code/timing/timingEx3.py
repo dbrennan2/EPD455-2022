@@ -1,7 +1,7 @@
 import time
 
 def approach1():
-    """code works, not pythonic"""
+    """works, but not preferred"""
     sum = 0
     # start time
     tic = time.time()
@@ -10,10 +10,10 @@ def approach1():
         sum+=i
     # end time
     toc = time.time()
-    print(f"For loop took {toc - tic:0.7f} seconds")
+    print(f"Elapsed time: {toc - tic:0.7f} s.")
 
 def approach2():
-    """code works, and pythonic"""
+    """works, and  preferred"""
     sum = 0
     # start time
     tic = time.perf_counter()
@@ -22,9 +22,9 @@ def approach2():
         sum+=i
     # end time
     toc = time.perf_counter()
-    print(f"For loop took {toc - tic:0.7f} seconds with perf_counter")
+    print(f"Elapsed time: {toc - tic:0.7f} s with perf_counter.")
 
 
 if __name__ == "__main__":
-    # approach1()
-    approach2()   
+    approach1()
+    #approach2()   
