@@ -1,5 +1,4 @@
 import time
-import argparse
 
 def approach1():
     """works, but not preferred"""
@@ -9,6 +8,7 @@ def approach1():
         sum+=i
     toc = time.time() # stop watch
     print(f"Elapsed time: {toc - tic:0.7f} s.")
+
 
 def approach2():
     """works, and  preferred"""
@@ -21,6 +21,7 @@ def approach2():
 
 
 if __name__ == "__main__":
+    import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument('-c','--choice', type = int, required = True, \
         help='Select 1 or 2 to experiment with two different types of timing.')
