@@ -2,16 +2,6 @@ import time
 
 
 def approach1():
-    """works, and preferred"""
-    sum = 0
-    tic = time.process_time()  # start watch
-    for i in range(100000):
-        sum += 1.0/(3.1*i+1)
-    toc = time.process_time()  # stop watch
-    print(f"Elapsed time: {toc - tic:0.7f} s.")
-
-
-def approach2():
     """works, but not preferred"""
     sum = 0
     tic = time.perf_counter()  # start watch
@@ -19,6 +9,16 @@ def approach2():
         sum += 1.0/(3.1*i+1)
     toc = time.perf_counter()  # stop watch
     print(f"Elapsed time: {toc - tic:0.7f} s with perf_counter.")
+
+
+def approach2():
+    """works, and preferred"""
+    sum = 0
+    tic = time.process_time()  # start watch
+    for i in range(100000):
+        sum += 1.0/(3.1*i+1)
+    toc = time.process_time()  # stop watch
+    print(f"Elapsed time: {toc - tic:0.7f} s.")
 
 
 if __name__ == "__main__":
