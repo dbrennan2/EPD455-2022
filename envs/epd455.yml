@@ -1,0 +1,11 @@
+name: epd455
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - scipy
+  - matplotlib
+  - beautifulsoup4
+  - pandas
+prefix: /home/unjhawala/anaconda3/envs/epd455
