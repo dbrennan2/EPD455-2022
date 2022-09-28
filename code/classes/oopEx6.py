@@ -11,4 +11,4 @@ class point:
 
 
 pt = point(2,3)
-print("this is how far it is from origin:", pt())
+print("How far the point is from origin: %5.3f" % pt())
