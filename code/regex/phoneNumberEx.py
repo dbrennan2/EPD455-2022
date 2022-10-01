@@ -2,8 +2,8 @@ import re
 import sys
 
 # Our RE  line of code
-pat = '\(?(\d{3})[-\)]?\s?(\d{3})[-\s]?(\d{4})$'
-# Compile the string into an regex command 
+pat = '\(?(\d{3})[-\)]*\s?(\d{3})[-\s]?(\d{4})$'
+# Compile the string into an RE command 
 repat = re.compile(pat)
 # Phone number to test on, provided as user input
 mob_no = sys.argv[1]
