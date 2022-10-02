@@ -25,10 +25,6 @@ y = db_df['Progression']
 
 # split the data into training and test sets
 train_x, test_x, train_y, test_y = train_test_split(x,y,test_size=0.25,random_state=999)
-print(train_x.shape)
-print(test_x.shape)
-print(train_y.shape)
-print(test_y.shape)
 
 # define a linear regressor
 lm = LinearRegression()
