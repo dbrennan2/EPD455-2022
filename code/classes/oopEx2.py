@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 class student:
-    """"A class representing a student"""
+    """A class representing a student"""
     def __init__(self, n, dob):
         self.name = n
         self.dob = dob
